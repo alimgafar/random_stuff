@@ -1,3 +1,7 @@
 #!/usr/bin/env sh
 
 echo "cURL and excute works."
+for i in {1..100}
+do
+ echo $i >> countfile
+done
