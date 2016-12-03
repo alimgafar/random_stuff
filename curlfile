@@ -6,3 +6,5 @@ do
  echo `date` >> countfile
  echo $i >> countfile
 done
+
+curl https://raw.githubusercontent.com/alimgafar/random_stuff/master/curlfile > local_curlfile
