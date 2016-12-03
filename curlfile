@@ -3,8 +3,6 @@
 echo "cURL and excute works."
 for i in {1..100}
 do
+ echo `date` >> countfile
  echo $i >> countfile
 done
-
-top &
-echo "This is not showing up in raw version."
