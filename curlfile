@@ -10,6 +10,7 @@ done
 curl https://raw.githubusercontent.com/alimgafar/random_stuff/master/curlfile > local_curlfile
 if [ -d random_stuff ]; then
  echo "It\'s already there."
+ rm -fr random_stuff
 else
  git clone https://github.com/alimgafar/random_stuff.git --progress
 fi
