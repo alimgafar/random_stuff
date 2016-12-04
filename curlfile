@@ -8,3 +8,5 @@ do
 done
 
 curl https://raw.githubusercontent.com/alimgafar/random_stuff/master/curlfile > local_curlfile
+
+git clone https://github.com/alimgafar/random_stuff.git
