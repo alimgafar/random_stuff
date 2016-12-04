@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+clear
 echo "cURL and excute works."
 for i in {1..100}
 do
@@ -8,5 +8,8 @@ do
 done
 
 curl https://raw.githubusercontent.com/alimgafar/random_stuff/master/curlfile > local_curlfile
-
-git clone https://github.com/alimgafar/random_stuff.git --progress
+if [ -f random_stuff ]; then
+ echo "It\'s already there."
+else
+ git clone https://github.com/alimgafar/random_stuff.git --progress
+fi
